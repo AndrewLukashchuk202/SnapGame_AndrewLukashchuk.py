@@ -28,7 +28,7 @@ To play the first way, run this file; to play the second way, run that file. In 
 the minimum and maximum number of players is 2. In the first option, the game is carried out using the simulation method by printing output to the console, in the second 
 option, by pressing the button - "Next round"
 
-# License
+# License:
 ```Tkinter License Statement
 
 This project includes Tkinter, a GUI library for Python, which is part of the Python Software Foundation's distribution.
