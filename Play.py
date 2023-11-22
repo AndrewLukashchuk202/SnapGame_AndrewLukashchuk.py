@@ -32,6 +32,10 @@ class Play:
             name (str): The name of the game.
         """
         self.name = name
+        self.gaming_deck = self.set_deck()
+        self.list_of_players = self.get_players()
+        self.rounds = 1
+        self.gaming_deck.shuffle()
 
     def set_deck(self):
         """Create and return a new deck of cards.
@@ -86,59 +90,51 @@ class Play:
             the winner at the end.
             """
 
-        gaming_deck = self.set_deck()
-
-        list_of_players = self.get_players()
-
-        rounds = 1
-
-        gaming_deck.shuffle()
-
-        hands = gaming_deck.deal(len(list_of_players))
+        hands = self.gaming_deck.deal(len(self.list_of_players))
         card_index = 0
-        for player in list_of_players:
+        for player in self.list_of_players:
             player.hand = hands[card_index]
             card_index += 1
 
         print("Snap game starts!")
 
-        while len(list_of_players) > 1:
+        if len(self.list_of_players) > 1:
             print("---------------------------------------")
-            print(f"\tStart of the round number  {rounds}:")
-            for player in list_of_players:
+            print(f"\tStart of the round number  {self.rounds}:")
+            for player in self.list_of_players:
                 print(f"Player - {player.name} has {player.hand}")
 
-            print(f"Cards on the table - {gaming_deck.display_deck()}")
+            print(f"Cards on the table - {self.gaming_deck.display_deck()}")
 
-            for player in list_of_players:
+            for player in self.list_of_players:
                 players_card = random.choice(player.hand)
-                if len(gaming_deck.deck) != 0:
-                    if not player.snap(players_card, gaming_deck.display_deck()[-1]):
-                        gaming_deck.deck.append(players_card)
+                if len(self.gaming_deck.deck) != 0:
+                    if not player.snap(players_card, self.gaming_deck.display_deck()[-1]):
+                        self.gaming_deck.deck.append(players_card)
                         player.hand.remove(players_card)
                         print(f"Player {player.name} puts card {players_card} on the table")
                     else:
                         print(f"Player {player.name} puts card {players_card}, says - snap! and takes all the cards")
-                        player.collect_cards(gaming_deck.deck)
-                        gaming_deck.deck.clear()
+                        player.collect_cards(self.gaming_deck.deck)
+                        self.gaming_deck.deck.clear()
                 else:
-                    gaming_deck.deck.append(players_card)
+                    self.gaming_deck.deck.append(players_card)
                     player.hand.remove(players_card)
                     print(f"Player {player.name} puts card {players_card} on the table")
 
-            print(f"\tEnd of the round number {rounds}")
+            print(f"\tEnd of the round number {self.rounds}")
             print("---------------------------------------")
 
-            rounds += 1
+            self.rounds += 1
 
-            for player in list_of_players:
+            for player in self.list_of_players:
                 if not player.has_cards():
-                    list_of_players.remove(player)
+                    self.list_of_players.remove(player)
 
-        for player in list_of_players:
+        for player in self.list_of_players:
             if player.has_cards():
                 print(f"Player {player.name} has won, since he/she is the only player with cards")
 
 
-game1 = Play("Room 101")
-game1.play()
+# game1 = Play("Room 101")
+# game1.play()
