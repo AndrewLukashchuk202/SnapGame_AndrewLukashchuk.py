@@ -78,3 +78,19 @@ Permission to use, copy, modify, and distribute this software and its associated
 
 SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ```
+# Credits & Aknowledgment:
+All materials used are freeware
+
+Made with Tkinter and Pillow modules: [https://docs.python.org/3/library/tkinter.html], [https://pillow.readthedocs.io/en/stable/]
+
+Images of 52 playing cards you can download from - [tekeye.uk](https://tekeye.uk/playing_cards/svg-playing-cards)
+
+Author: Daniel S. Fowler [https://boardgames.stackexchange.com/users/34841/daniel-s-fowler]
+
+
+
+
+
+
+
+
