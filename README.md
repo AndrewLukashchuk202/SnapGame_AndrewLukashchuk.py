@@ -1,6 +1,6 @@
 # SnapGameGUI
 
-# Installation
+## Installation
 To be able to play Snap Game you need to install external libraries - Tkinter and Pillow. 
 
 **Tkinter is the standard GUI (Graphical User Interface) toolkit that comes with Python. It provides tools for creating desktop applications with graphical interfaces.**
@@ -16,19 +16,19 @@ Step-by-step installation:
 - [3] Install external libraries. The best way to install them is to use the pip tool (which is what python uses to install packages). If you have the latest version of Python, which is Python 3, provide the next command in the terminal: ```pip3 install Tkinter``` and ```pip3 install Pillow```
 - [4] The last step is: using Windows/Linux commands in your terminal go to the location where you store the installed project and run the following command using Python: ```python3 Play.py``` to play the simulation version of s Snap Game or ```python3 SnapGameGUI.py``` to play an interactive version of a Snap Game
 
-# An Interactive Game of Snap - Description
+## An Interactive Game of Snap - Description
 The essence of the game is that at the beginning of the round, the game's participants evenly deal with each other cards from a deck consisting of 52 cards. 
 In each round, the participants of the game take turns putting cards on the table, on top of each other, face down so that you can see the card, if the card number of the 
 participant who just put the card matches the card number of the previous participant, the game says - Snap and takes all the cards. The game continues until one player takes 
 all the cards from the other players
 
-# How to Play:
+## How to Play
 Snap game includes 52 playing cards, 12 of each suit, not including jokers. The game can be played in two ways, through the console and through the interactive design. 
 To play the first way, run this file; to play the second way, run that file. In the first option, the minimum number of players is 2, and the maximum is 52, in the second option,
 the minimum and maximum number of players is 2. In the first option, the game is carried out using the simulation method by printing output to the console, in the second 
 option, by pressing the button - "Next round"
 
-# License:
+## License
 ```Tkinter License Statement
 
 This project includes Tkinter, a GUI library for Python, which is part of the Python Software Foundation's distribution.
@@ -78,7 +78,7 @@ Permission to use, copy, modify, and distribute this software and its associated
 
 SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ```
-# Credits & Acknowledgment:
+## Credits & Acknowledgment:
 All materials used are freeware
 
 Made with Tkinter and Pillow modules: [https://docs.python.org/3/library/tkinter.html], [https://pillow.readthedocs.io/en/stable/]
